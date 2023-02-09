@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETNODIUM</title>
+    <meta name="description" content="Etnodim - магазин дизайнерських вишиванок ручної роботи та етнічного одягу">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header flex">
+                <!-- При nav-mobile__burger_active з'являється nav-mobile__expand-->
+                <div class="nav-mobile nav-mobile__burger_active">
+                    <button class="btn__icon" type="button">
+                        <img class="nav-mobile__burger" src="./img/burger.svg" alt="menu">
+                    </button>
+
+                    <div class="nav-mobile__expand">
+                        <div class="nav-mobile__close flex">
+                            <button class="btn__icon" type="button">
+                                <div class="close"></div>
+                            </button>
+                            <img class="header__logo" src="./img/logo.png" alt="logo">
+                        </div>
+
+                        <ul class="nav">
+                            <!-- При nav__item_active відкриваються категорії каталогу-->
+                            <li class="nav__item nav__item_active">
+                                <a class="nav__link nav__link_expand flex" href="#">
+                                    Каталог
+                                    <img class="nav-mobile__arrow" src="./img/nav-mobile-arrow.svg" alt="">
+                                </a>
+                                <ul class="categories">
+                                   <li class="categories__item">
+                                       <a class="categories__link" href="#">ЖІНКАМ</a>
+                                       <ul class="categories__expand">
+                                           <li class="categories__expand__item"><a href="#">Вишиті сукні</a></li>
+                                           <li class="categories__expand__item"><a href="#">Жіночі вишиванки</a></li>
+                                           <li class="categories__expand__item"><a href="#">Конструктор вишиванки</a></li>
+                                           <li class="categories__expand__item"><a href="#">Світшоти та светри</a></li>
+                                           <li class="categories__expand__item"><a href="#">Футболки</a></li>
+                                           <li class="categories__expand__item"><a href="#">Брюки та комбінезони</a></li>
+                                           <li class="categories__expand__item"><a href="#">Пальта та куртки</a></li>
+                                           <li class="categories__expand__item"><a href="#">Спідниці</a></li>
+                                       </ul>
+                                    </li>
+                                                
+                                    <li class="categories__item">
+                                        <a class="categories__link" href="#">ЧОЛОВІКАМ</a>
+                                        <ul class="categories__expand">
+                                            <li class="categories__expand__item"><a href="#">Чоловічі вишиванки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Конструктор вишиванки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Світшоти та светри</a></li>
+                                            <li class="categories__expand__item"><a href="#">Футболки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Брюки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Пальта та куртки</a></li>
+                                        </ul>
+                                    </li>
+                                                
+                                    <li class="categories__item">
+                                        <a class="categories__link" href="#">ДІТЯМ</a>
+                                        <ul class="categories__expand">
+                                            <li class="categories__expand__item"><a href="#">Вишиті сукні</a></li>
+                                            <li class="categories__expand__item"><a href="#">Дитячі вишиванки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Конструктор вишиванки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Світшоти та светри</a></li>
+                                            <li class="categories__expand__item"><a href="#">Футболки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Брюки та комбінезони</a></li>
+                                            <li class="categories__expand__item"><a href="#">Пальта та куртки</a></li>
+                                        </ul>
+                                    </li>
+                                            
+                                    <li class="categories__item">
+                                        <a class="categories__link" href="#">АКСЕСУАРИ</a>
+                                        <ul class="categories__expand">
+                                            <li class="categories__expand__item"><a href="#">Шарфи</a></li>
+                                            <li class="categories__expand__item"><a href="#">Сумки</a></li>
+                                            <li class="categories__expand__item"><a href="#">Прикраси для волосся</a></li>
+                                        </ul>
+                                    </li>
+                                            
+                                    <li class="categories__item">
+                                        <a class="categories__link" href="#">ДІМ</a>
+                                        <ul class="categories__expand">
+                                            <li class="categories__expand__item"><a href="#">Рушники</a></li>
+                                            <li class="categories__expand__item"><a href="#">Ковдри</a></li>
+                                            <li class="categories__expand__item"><a href="#">Скатертини</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__item_none"><a class="nav__link" href="#">Знижки</a></li>
+                            <li class="nav__item nav__item_none"><a class="nav__link" href="#">Блог</a></li>
+                            <li class="nav__item nav__item_none"><a class="nav__link" href="#">Про нас</a></li>
+                        </ul>
+
+                        <div class="nav-mobile__selector">
+                            <div class="selector-group">
+                                <button class="selector-group__item selector-group__item_active" type="button">UA</button>
+                                <button class="selector-group__item" type="button">RU</button>
+                                <button class="selector-group__item" type="button">ENG</button>
+                            </div>
+                            <span class="selector-group__item">|</span>
+                            <div class="selector-group selector-group__currency">
+                                <button class="selector-group__item selector-group__item_active" type="button">₴</button>
+                                <button class="selector-group__item" type="button">$</button>
+                                <button class="selector-group__item" type="button">€</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav nav-desktop">
+                    <!-- При nav__item_active з'являється header__pop-up -->
+                    <li class="nav__item nav__item_active">
+                        <a class="nav__link" href="#">Каталог</a>
+                        <div class="header__pop-up">
+                            <ul class="categories">
+                                <li class="categories__item flex">
+                                    <a class="categories__link" href="#">ЖІНКАМ</a>
+                                    <ul class="categories__expand">
+                                        <li class="categories__expand__item"><a href="#">Вишиті сукні</a></li>
+                                        <li class="categories__expand__item"><a href="#">Жіночі вишиванки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Конструктор вишиванки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Світшоти та светри</a></li>
+                                        <li class="categories__expand__item"><a href="#">Футболки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Брюки та комбінезони</a></li>
+                                        <li class="categories__expand__item"><a href="#">Пальта та куртки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Спідниці</a></li>
+                                    </ul>
+                                </li>
+                                        
+                                <li class="categories__item flex">
+                                    <a class="categories__link" href="#">ЧОЛОВІКАМ</a>
+                                    <ul class="categories__expand">
+                                        <li class="categories__expand__item"><a href="#">Чоловічі вишиванки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Конструктор вишиванки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Світшоти та светри</a></li>
+                                        <li class="categories__expand__item"><a href="#">Футболки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Брюки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Пальта та куртки</a></li>
+                                    </ul>
+                                </li>
+                                        
+                                <li class="categories__item flex">
+                                    <a class="categories__link" href="#">ДІТЯМ</a>
+                                    <ul class="categories__expand">
+                                        <li class="categories__expand__item"><a href="#">Вишиті сукні</a></li>
+                                        <li class="categories__expand__item"><a href="#">Дитячі вишиванки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Конструктор вишиванки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Світшоти та светри</a></li>
+                                        <li class="categories__expand__item"><a href="#">Футболки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Брюки та комбінезони</a></li>
+                                        <li class="categories__expand__item"><a href="#">Пальта та куртки</a></li>
+                                    </ul>
+                                </li>
+                                        
+                                <li class="categories__item flex">
+                                    <a class="categories__link" href="#">АКСЕСУАРИ</a>
+                                    <ul class="categories__expand">
+                                        <li class="categories__expand__item"><a href="#">Шарфи</a></li>
+                                        <li class="categories__expand__item"><a href="#">Сумки</a></li>
+                                        <li class="categories__expand__item"><a href="#">Прикраси для волосся</a></li>
+                                    </ul>
+                                </li>
+                                        
+                                <li class="categories__item flex">
+                                    <a class="categories__link" href="#">ДІМ</a>
+                                    <ul class="categories__expand">
+                                        <li class="categories__expand__item"><a href="#">Рушники</a></li>
+                                        <li class="categories__expand__item"><a href="#">Ковдри</a></li>
+                                        <li class="categories__expand__item"><a href="#">Скатертини</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <img class="header__pop-up__img" src="./img/header-pop-up.jpg" alt="photographer">
+                        </div>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Знижки</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Про нас</a></li>
+                </ul>
+                <img class="header__logo" src="./img/logo.png" alt="logo">
+                <ul class="header__settings">
+                    <li class="header__settings__item nav-desktop">
+                        <select class="header__settings__select header__language nav_desktop">
+                            <option value="UA">UA</option>
+                            <option value="RU">RU</option>
+                            <option value="ENG">ENG</option>
+                        </select>
+                    </li>
+
+                    <li class="header__settings__item nav-desktop">
+                        <select class="header__settings__select header__currency nav_desktop">
+                            <option value="UAH">₴</option>
+                            <option value="USD">$</option>
+                            <option value="EUR">€</option>
+                        </select>
+                    </li>
+
+                    <li class="header__settings__item tel_desktop"><a href="tel:+380978889292">+38 097 888 92 92</a></li>
+                    
+                    <li class="header__settings__item">
+                        <button class="btn__icon" type="button">
+                            <img src="./img/search.svg" alt="search">
+                        </button>
+                    </li>
+                    
+                    <li class="header__settings__item">
+                        <button class="btn__icon" type="button">
+                            <img src="./img/cart.svg" alt="cart">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+</body>
+</html>

@@ -136,6 +136,11 @@ li {
   height: 25px;
 }
 
+.btn__svg {
+  width: 21px;
+  height: 21px;
+}
+
 .header__pop-up {
   display: none;
 }
@@ -295,6 +300,9 @@ li {
     height: 10px;
     padding-left: 13px;
   }
+  #nav-mobile-arrow {
+    stroke: #000;
+  }
   .nav-mobile__selector {
     font-family: "Raleway Regular";
     font-style: normal;
@@ -304,9 +312,20 @@ li {
     -webkit-font-feature-settings: "pnum" on, "lnum" on;
             font-feature-settings: "pnum" on, "lnum" on;
     padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .selector-group {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .selector-group__item {
     background: none;
@@ -317,14 +336,29 @@ li {
     font-family: "Raleway Bold";
     font-weight: 700;
   }
+  .selector-group__item_active .selector-group__uah {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+  }
+  .selector-group__uah {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+  }
   .nav__link:hover {
     color: #DA1F39;
+  }
+  .nav__link:hover #nav-mobile-arrow {
+    stroke: #DA1F39 !important;
   }
   .categories {
     display: none;
   }
   .nav__item_active .nav__link_expand {
     color: #DA1F39;
+  }
+  .nav__item_active #nav-mobile-arrow {
+    stroke: #DA1F39 !important;
   }
   .nav__item_active .categories {
     display: block;
@@ -380,15 +414,13 @@ li {
     display: none;
   }
   .nav-mobile__selector {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .selector-group__currency > button {
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -593,6 +593,10 @@ li {
   }
 }
 @media screen and (max-width: 605px) {
+  .header__logo {
+    width: 95px;
+    height: 25px;
+  }
   .cart_active .cart-pop-up {
     right: 5px;
     padding: 5px;

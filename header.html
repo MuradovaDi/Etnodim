@@ -19,7 +19,7 @@
         <div class="container">
             <div class="header flex">
                 <!-- При nav-mobile__burger_active з'являється nav-mobile__expand-->
-                <div class="nav-mobile ">
+                <div class="nav-mobile nav-mobile__burger_active">
                     <button class="btn__icon" type="button">
                         <svg class="icon nav-mobile__burger">
                             <use xlink:href="#burger"></use>
@@ -31,12 +31,11 @@
                             <button class="btn__icon" type="button">
                                 <div class="close"></div>
                             </button>
-                            <img class="header__logo" src="./img/logo.png" alt="logo">
                         </div>
 
                         <ul class="nav">
                             <!-- При nav__item_active відкриваються категорії каталогу-->
-                            <li class="nav__item ">
+                            <li class="nav__item nav__item_active">
                                 <a class="nav__link nav__link_expand flex" href="#">
                                     Каталог
                                     <svg class="icon nav-mobile__arrow">
@@ -198,7 +197,7 @@
                     <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Про нас</a></li>
                 </ul>
-                <img class="header__logo" src="./img/logo.png" alt="logo">
+                <img class="header__logo header__logo_main" src="./img/logo.png" alt="logo">
                 <ul class="header__settings">
                     <li class="header__settings__item nav-desktop">
                         <select class="select header__settings__select header__language nav_desktop">

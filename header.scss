@@ -139,6 +139,7 @@ li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .header__settings__item{
@@ -148,6 +149,7 @@ li{
 
 .header__settings__select{
     background-image: url(./img/selector-arrow.svg);
+    cursor: pointer;
 }
 
 .header__language{
@@ -166,6 +168,7 @@ li{
     border: none;
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 .btn__svg{
@@ -453,6 +456,11 @@ li{
         padding: 8px 10px;
     }
 
+    .header__logo{
+        width: 95px;
+        height: 25px;
+    }
+
     .nav-mobile__burger{
         display: flex;
         width: 20px;
@@ -620,12 +628,7 @@ li{
     }
 }
 
-@media screen and (max-width: 605px){     
-    .header__logo{
-        width: 95px;
-        height: 25px;
-    }
-    
+@media screen and (max-width: 605px){         
     .cart_active 
         .cart-pop-up {
             right: 5px;
